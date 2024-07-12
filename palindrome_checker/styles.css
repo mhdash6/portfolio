@@ -1,0 +1,135 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana,Tahoma, sans-serif;
+    color: #E2DFD0;
+
+}
+.container{
+    margin-top: calc( 1.5vh + 4rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav, .nav-item, #location {
+    font-size: calc(0.8rem + 0.9vh- 0.1vw);
+    transition: background 0.5s ease-out;
+    margin:0;
+    padding:0;
+  }
+
+  .nav-item:hover {
+   background:#4722b6;
+  }
+
+  .navbar-toggler-icon {
+   font-size: calc(0.8rem + 0.9vh);
+  }
+
+ .wrapper {
+    padding: calc( 0.5rem + 1vh + 0.75vw);
+    width: clamp(10rem, 50vw, calc(80vw - 10vh));
+    height: clamp( calc(33rem - 15vw), calc(80vh-10vw), 100rem);
+    background: #524C42;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 40px -10px rgba(82,76,66,1);
+-moz-box-shadow: 0px 0px 40px -10px rgba(82,76,66,1);
+box-shadow: 0px 0px 40px -10px rgba(82,76,66,1);
+    }
+
+.title {
+    text-align: center;
+    padding: clamp(0.1rem,0.5rem,1rem) ;
+    font-size: clamp(1rem, 0.6522rem + 1.7391vw, 2rem);
+    max-width: 100%;
+}
+
+label {
+    color: #0a0a23;
+    margin-bottom: 20px;
+}
+
+.palindrome-btn {
+    border: none;
+    padding:  10px;
+    background-color: #F97300;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition:background-color 0.3s;
+}
+.palindrome-btn:hover{
+    background-color: #80471c;
+}
+
+.palindrome-input {
+    height: 6vh;
+    margin: 10px 0px;
+    border: none;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.button-input-div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.palindrome-input::placeholder {
+    font-size: calc(0.7rem + 0.35vh + 0.35vw);
+    text-align: center;
+}
+
+.palindrome-input {
+    padding: calc(0.5rem + 1vh + 1vw);
+    font-size: calc(0.8rem + 1vh + 1vw);
+    text-align: center;
+}
+
+.results-div {
+  background-color: #32012F;
+  padding: clamp(0.75rem, 6%, 3rem);
+  margin:5px;
+  font-size: clamp(1rem, 0.81rem + 0.87vw, 1.5rem);
+  min-height: 3.3rem;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+
+i {
+   font-size: calc(1.5vh + 1.5vw + 1rem);
+   animation: color-change 1s ease-in infinite alternate both;
+}
+
+
+@keyframes color-change {
+  0% {
+    color: yellow;
+  }
+  100% {
+    color: white;
+  }
+}
+
+.palindrome-definition-div {
+    font-size: clamp(1rem, 0.81rem + 0.87vw, 1.5rem);
+    background-color: #32012F;
+    margin-top: 3vh;
+    padding: clamp(0.75rem, 6%, 3rem);
+    border-radius: 20px;
+ text-align: center;
+}

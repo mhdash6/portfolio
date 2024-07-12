@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: Verdana,Tahoma, sans-serif;
+  }
+  nav, .nav-item, #location {
+    font-size: calc(0.8rem + 0.9vh- 0.1vw);
+    transition: background 0.5s ease-out;
+    margin:0;
+    padding:0;
+  }
+
+  .nav-item:hover {
+   background:#4722b6;
+  }
+
+  .navbar-toggler-icon {
+   font-size: calc(0.8rem + 0.9vh);
+  }
+
+  .converter-container {
+    margin-top: calc( 1.5vh + 4rem);
+    max-width:45rem;
+    max-height:60rem;
+    padding:calc( 0.5rem + 0.5vh + 0.5vw);
+    background: #eaf4f4;
+    box-shadow: 0 8px 50px -8px rgba(0, 0, 0, 0.3);
+    border-radius: 16px;
+  }
+
+  .converter-container h2 {
+    font-size: calc(0.8rem + 2vh + 1vw);
+    font-weight: normal;
+    position: relative;
+  }
+
+
+
+  .converter-container .content {
+    display: flex;
+    flex-direction: column;
+    gap: calc(0.25rem + 2vh);
+  }
+  .converter-container input[type="number"]
+  {
+    font-size:calc(0.5rem + 1.5vh + 0.75vw);
+    border-radius: 16px;
+  }
+  .converter-container input[type="text"]{
+    border-radius: 16px;
+    font-size:calc(0.5rem + 2vh + 1vw);
+    width:90%;
+    margin:calc(0.5vh + 0.5vw);
+  }
+  .select-container {
+  display: flex;
+  gap: 0;
+  }
+
+  .converter-container .swap-btn{
+    font-size: calc(0.8rem + 2.5vh + 1.5vw) ;
+    padding: calc(0.5vh + 0.5vw);
+    cursor: pointer;
+    border-radius: 16px;
+    border: calc( 0.1rem + 0.1vh + 0.1vw) solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+
+  .rotate{
+    -webkit-animation: rotate-center 1.75s ease-out both;
+    animation: rotate-center 1.75s ease-out both;
+  }
+
+  .converter-container .result {
+    font-size: calc(0.8rem + 2vh + 1vw) ;
+    font-weight: bold;
+    text-align: center;
+    padding: calc(0.5vh + 0.5vw);
+    background: #1d3461;
+    color: #fff;
+    border-radius: 16px;
+  }
+
+  .converter-container .result-currency {
+    font-size: calc(0.2rem + 2vh + 1vw);
+    text-transform: uppercase;
+  }
