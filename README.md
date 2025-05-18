@@ -11,7 +11,7 @@ This project is designed as part of a FreeCodeCamp learning path.
 
 ## 📌 Features
 
-- Fully responsive design
+- responsive design
 - Clean layout using Bootstrap
 - Simple and beginner-friendly codebase
 
@@ -21,3 +21,5 @@ This project is designed as part of a FreeCodeCamp learning path.
 - CSS
 - Bootstrap
 - JavaScript
+
+**Note**: The Tic Tac Toe game included in the portfolio was **not created by me**. It is used for demonstration purposes only.
